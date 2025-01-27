@@ -38,6 +38,7 @@ body {
     height: 500px;
     border-radius: 10px;
     position: relative;
+    padding: 12px;
 }
 
 .slider {
@@ -116,23 +117,23 @@ body {
 }
 
 .fundo-3 {
-	background: url(../imagens/fundo-3.jpg) no-repeat;
+    background: url(../imagens/fundo-3.jpg) no-repeat;
 }
 
 .fundo-4 {
-	background: url(../imagens/fundo-4.jpg) no-repeat;
+    background: url(../imagens/fundo-4.jpg) no-repeat;
 }
 
 .fundo-5 {
-	background: url(../imagens/fundo-5.jpg) no-repeat;
+    background: url(../imagens/fundo-5.jpg) no-repeat;
 }
 
 .fundo-6 {
-	background: url(../imagens/fundo-6.jpg) no-repeat;
+    background: url(../imagens/fundo-6.jpg) no-repeat;
 }
 
 .fundo-7 {
-	background: url(../imagens/fundo-7.jpg) no-repeat;
+    background: url(../imagens/fundo-7.jpg) no-repeat;
 }
 
 .btn-seta {
@@ -172,4 +173,32 @@ body::-webkit-scrollbar-track {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #c08057;
+}
+
+.carta-virada {
+    display: none;
+}
+
+.carta-virada.mostrar-fundo-carta {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../Imagens/fundo-carta.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.cartao.virar {
+    transform: rotateZ(90deg);
+    transition: transform 0.3s ease-in-out;  
+    
+}
+
+.esconder {
+    display: none;
 }
